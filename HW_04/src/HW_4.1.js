@@ -1,17 +1,9 @@
-const N = +prompt ('Введіть число');
+const N = +prompt ('Введіть число')
+
 if (isNaN(N) || N <= 1) {
-    console.log ('Введіть корректне значення');
+    console.log('Введіть коректне значення')
+} else if (N % 2 !== 0 && N % N === 0 || N === 2) {
+    console.log(`Число ${N} є простим числом`)
 } else {
-    for (let i = 2; i <= N; i++) {
-    if (N % 1 === 0) {
-            break;
-    }
-        }
-    if (N) {
-        console.log(`Число ${N} є простим числом`);
-    } else {
-        console.log(`Число ${N} не є простим числом`);
-    }
-  }  
-
-
+    console.log(`Число ${N} не є простим числом`)
+}
