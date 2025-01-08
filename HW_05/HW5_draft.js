@@ -186,4 +186,4 @@ const result = findGCD (4, 6);
 console.log ('result > ', result);
 */
 
-//12312313
+//12312313 qwdawefwqerg lknlkj;lk;l
