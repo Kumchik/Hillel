@@ -1,25 +1,20 @@
-const num = +prompt ('Enter num: ')
+let num = +prompt('Введіть число');
+let sum = true;
 
-for (let i = 2; i <= num; i++) {
-    // console.log (num, '-', i, '-', num % i);
+for (let i = 2; i < num; i++) {
+
 
     if (num % i === 0) {
-        console.log ('Просте');
+        sum = false;
         break;
-    }
-
-    console.log (i);
+    } 
 }
 
-
-
-
-
-
-// if (isNaN(N) || N <= 1) {
-//     console.log('Введіть коректне значення')
-// } else if (N % 2 !== 0 && N % N === 0 || N === 2) {
-//     console.log(`Число ${N} є простим числом`)
-// } else {
-//     console.log(`Число ${N} не є простим числом`)
-// }
+if (isNaN(num) || num <= 0){
+    console.log('Введіть коректне значення');
+}
+else if (sum) {
+    console.log('Просте число.');
+} else {
+    console.log('Складене число.');
+}
