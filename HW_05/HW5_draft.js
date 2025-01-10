@@ -186,3 +186,16 @@ const result = findGCD (4, 6);
 console.log ('result > ', result);
 */
 
+
+
+function print(word) {
+    console.log(word);
+    console.log('!');
+}
+
+function add (x, y) {
+    let res = x + y;
+}
+
+
+print('Hello');
