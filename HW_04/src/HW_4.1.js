@@ -11,7 +11,7 @@ for (let i = 2; i < num; i++) {
 }
 
 if (isNaN(num) || num <= 0){
-    console.log('Введіть коректне значення')
+    console.log('Введіть коректне значення');
 }
 else if (sum) {
     console.log('Просте число.');
