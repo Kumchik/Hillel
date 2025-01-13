@@ -122,7 +122,7 @@ console.log('slicedPart >', slicedPart);
 
 
 /*
-// Переводить у верхній массив.
+// Переводить у верхній регістр.
 const lowerCaseString = 'hello world!';
 console.log(lowerCaseString.toUpperCase());
 // toUpperCase - в нижній реестр
