@@ -1,21 +1,13 @@
-function camelCase(str) {
-    if (str.length === 0) return str;
-    let result = str[0].toLowerCase();
-    for (let i = 1; i < str.length; i++) {
-        const char = str[i];
+const students = [
+	{ name: "Alice", age: 20, grade: 4.5 },
+	{ name: "Bob", age: 21, grade: 3.9 },
+	{ name: "Charlie", age: 19, grade: 4.8 }
+];
 
-        if (char === ' ') {
-            result += str[i + 1].toUpperCase();
-            i++;
-        } else {
-            result += char.toLowerCase();
-        }
-    }
-    return result;
+function calculateAverageGrade(students) {
+    const totalGrade = students.reduce((sum, students) => sum + students.grade, 0);
+    const averageGrade = totalGrade / students.length;
+    return parseFloat(averageGrade.toFixed(1));
 }
 
-const inputString = prompt('Введіть рядок:');
-const result = camelCase(inputString);
-
-alert(`Результат у форматі camelCase: ${result}`);
-console.log(`Результат у форматі camelCase: ${result}`);
+console.log(calculateAverageGrade(students));

@@ -1,11 +1,8 @@
-const input = prompt ('Введіть значення:');
- 
-function doubleLettet(str) {
-    let result = '';
-    for (let i = 0; i < str.length; i++) {
-        result += str[i].repeat (2);
-    }
-    return result;
+const originalArray = [1, 2, 3, 4, 5];
+
+function reverseArray (originalArray) { 
+    return originalArray.reverse();
 }
 
-console.log(doubleLettet(input));
+const reversedArray = reverseArray(originalArray);
+console.log(reversedArray);

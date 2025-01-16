@@ -1,21 +1,9 @@
-function padString(str, length, symbol, toLeft = false) {
-    if (str.length >= length) {
-        return str;
-    }
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [3, 4, 5, 6, 7];
 
-    let paddingLength = length - str.length;
-    let padding = '';
-
-    for (let i = 0; i < paddingLength; i++) {
-        padding += symbol;
-    }
-    return toLeft ? padding + str : str + padding;
+function uniqueValues(array1, array2) {
+    return Array.from(new Set(array1.concat(array2)));
 }
-const str = prompt('Введіть рядок:');
-const length = +prompt('Введіть бажану довжину рядка:');
-const symbol = prompt('Введіть символ для доповнення:');
-const toLeft = confirm('Додавати символи зліва? (OK - так, Cancel - ні)');
 
-const result = padString(str, length, symbol, toLeft);
-alert(`Результат: ${result}`);
-console.log(`Результат: ${result}`);
+const uniqueValuesArray = uniqueValues(array1, array2);
+console.log(uniqueValuesArray);
