@@ -154,6 +154,7 @@ sourceArray.push(100);
 console.log(sourceArray);
 */
 
+/*
 const testArr = [];
 let promptValue;
 
@@ -168,7 +169,7 @@ while (promptValue !== null) {
 
 
 console.log('testArr >', testArr);
-
+*/
 
 
 
